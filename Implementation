@@ -185,10 +185,6 @@ def VC_Method_pandas(
                                                          / length_HV_periods["Proabability"].sum())
 
 
-
-
-
-
         #Generate the Linear Regression Model:
             #Dependent variable = Daily fluctuation
             # Independent variable = Distribution of Intra-day Fluctuation
@@ -210,8 +206,6 @@ def VC_Method_pandas(
         fig.suptitle(f"Prices evolution")
         ax.set_xlabel('days')
         ax.set_ylabel('$')
-
-
 
         days = range(lenght_sim)
         simulation_counter = 1
@@ -334,7 +328,6 @@ def VC_Method_pandas(
             synthetic_data = pd.concat([synthetic_data, 
                                         simulation],
                                        axis=1)
-
-        
+    
         return synthetic_data
     
