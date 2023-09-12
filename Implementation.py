@@ -1,3 +1,13 @@
+import pandas as pd
+import yfinance as yf
+import datetime
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+import statsmodels.api as sm
+
+
+
 def VC_Method_pandas(
                     #Required parameters:
                     ticker = str, # Ticker of the asset that you want to simulate
