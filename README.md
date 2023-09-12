@@ -6,7 +6,8 @@ In this repostiroy we are going to implement the python code for generating synt
 -differentiated time-steps\
 -No training needed\
 -Faster and easier to implement\
-
+## Theoretical foundation
+The Big Wall(street).pdf
 ## Funtion name:
 VC_method_pandas
 ## Source for historical inforamtion
