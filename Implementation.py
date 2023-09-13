@@ -173,7 +173,7 @@ def VC_Method_pandas(
 
         # Calculate the Probability Density Function for the length of High Volatility periods
         length_HV_periods = pd.DataFrame()
-        if len(high_volatility_historical_data["High volatility period"].value_counts())>1:
+        if len(np.unique(high_volatility_historical_data["High volatility period"].value_counts()))>1:
 
             distribucion_duracion = stats.kde.gaussian_kde(high_volatility_historical_data["High volatility period"].value_counts())
             x = np.arange(high_volatility_historical_data["High volatility period"].value_counts().min(),
