@@ -272,7 +272,7 @@ def VC_Method_pandas(
                     simulation.loc[day,f"Distribution of Intra-day Fluctuation {sim}"]= np.clip(linear_regression_model.predict(predict)[0]
                                                                                         + np.random.choice(white_noise),
                                                                                         0 , 1)
-                    simulation.loc[day,f"High volatility period {sim}"] = contador
+                    simulation.loc[day,f"High volatility period {sim}"] = HV_counter
                 # Replication of Stochastic process using Standard periods PDF´s
                 else:
 
